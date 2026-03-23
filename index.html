@@ -9,30 +9,27 @@
     <meta name="author" content="АЛКОдоставка">
     <link rel="canonical" href="https://dostavka-alkogolya-msk24.vercel.app/">
     <link rel="stylesheet" href="style.css">
-    <!-- Стандартная иконка для всех браузеров (favicon.ico) -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Иконки -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-<!-- Иконки для современных браузеров (PNG) -->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-<!-- Для устройств Apple (iPhone, iPad) -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <!-- Для Android / веб-приложений (манифест) -->
-<link rel="manifest" href="/site.webmanifest">
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107712492', 'ym');
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107712492', 'ym');
+        ym(107712492, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/107712492" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
-    ym(107712492, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/107712492" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
     <!-- Микроразметка LocalBusiness -->
     <script type="application/ld+json">
     {
@@ -41,7 +38,7 @@
         "name": "АЛКОдоставка",
         "image": "https://dostavka-alkogolya-msk24.vercel.app/logo.png",
         "url": "https://dostavka-alkogolya-msk24.vercel.app",
-        "telephone": "+7-999-786-39-67",
+        "telephone": "+79997863967",
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
@@ -50,7 +47,11 @@
                 "closes": "23:59"
             }
         ],
-        "priceRange": "₽-₽₽₽"
+        "priceRange": "₽-₽₽₽",
+        "sameAs": [
+            "https://t.me/alkotaxi_bot",
+            "https://wa.me/79997863967"
+        ]
     }
     </script>
 </head>
@@ -58,7 +59,7 @@
     <!-- Плавающие кнопки мессенджеров -->
     <div class="floating-messengers">
         <a href="https://t.me/alkotaxi_bot" target="_blank" class="messenger-btn telegram" title="Telegram" rel="noopener">📱</a>
-        <a href="https://wa.me/+79997863967" target="_blank" class="messenger-btn whatsapp" title="WhatsApp" rel="noopener">💬</a>
+        <a href="https://wa.me/79997863967" target="_blank" class="messenger-btn whatsapp" title="WhatsApp" rel="noopener">💬</a>
     </div>
 
     <!-- Шапка -->
@@ -74,7 +75,7 @@
             </nav>
             <div class="header-actions">
                 <div class="header-phone">
-                    <a href="tel:+79997863967">+7-999-786-39-67</a>
+                    <a href="tel:+79997863967">+7 (999) 786-39-67</a>
                     <span>Круглосуточно</span>
                 </div>
                 <a href="contacts.html" class="btn btn-small">Оставить заявку</a>
@@ -86,10 +87,8 @@
     <main>
         <!-- Герой с видео-фоном -->
         <section class="hero">
-            <!-- Видео-фон (замените src на своё) -->
             <video class="hero-video" autoplay muted loop playsinline>
                 <source src="/video/video.mp4" type="video/mp4">
-                <!-- Если видео с YouTube не работает как фон, используйте файл. Для примера оставлен fallback -->
                 Ваш браузер не поддерживает видео.
             </video>
             <div class="hero-overlay"></div>
@@ -112,12 +111,12 @@
                     <div class="step">
                         <span class="step-icon">📞</span>
                         <h3>Позвоните</h3>
-                        <p><a href="tel:+79997863967">+7-999-786-39-67</a><br>Круглосуточно, без выходных</p>
+                        <p><a href="tel:+79997863967">+7 (999) 786-39-67</a><br>Круглосуточно, без выходных</p>
                     </div>
                     <div class="step">
                         <span class="step-icon">💬</span>
                         <h3>Напишите в мессенджер</h3>
-                        <p><a href="https://wa.me/+79997863967" target="_blank">WhatsApp</a> или <a href="https://t.me/alkotaxi_bot" target="_blank">Telegram</a></p>
+                        <p><a href="https://wa.me/79997863967" target="_blank">WhatsApp</a> или <a href="https://t.me/alkotaxi_bot" target="_blank">Telegram</a></p>
                     </div>
                     <div class="step">
                         <span class="step-icon">📝</span>
@@ -204,55 +203,14 @@
                 <h3>Как оформить заказ?</h3>
                 <p>Вы можете:</p>
                 <ol>
-                    <li>Позвонить нам по телефону <a href="tel:+79997863967">+7-999-786-39-67</a> (круглосуточно).</li>
+                    <li>Позвонить нам по телефону <a href="tel:+79997863967">+7 (999) 786-39-67</a> (круглосуточно).</li>
                     <li>Оставить заявку на сайте в разделе <a href="contacts.html">Контакты</a> – мы перезвоним в течение 5 минут.</li>
                     <li>Написать в мессенджеры (Telegram, WhatsApp) – иконки справа внизу.</li>
                 </ol>
 
                 <h3>Отзывы наших клиентов</h3>
-                <div class="reviews">
-                    <!-- Существующие отзывы (со звёздами) -->
-                    <div class="review-item">
-                        <strong>Анна, Чертаново</strong>
-                        <div class="stars">★★★★★</div>
-                        <p>Заказывали виски и сыры на день рождения. Привезли быстро, всё свежее, виски просто божественное. Спасибо!</p>
-                    </div>
-                    <div class="review-item">
-                        <strong>Дмитрий, Бутово</strong>
-                        <div class="stars">★★★★★</div>
-                        <p>Постоянно беру здесь водку и рыбу. Цены приятные, доставка всегда вовремя. Рекомендую.</p>
-                    </div>
-                    <div class="review-item">
-                        <strong>Елена, Царицыно</strong>
-                        <div class="stars">★★★★★</div>
-                        <p>Удобно, что можно заказать и пиво, и сухарики. Всё в одном заказе. Доставили за час.</p>
-                    </div>
-                    <!-- Новые отзывы (ещё 5) -->
-                    <div class="review-item">
-                        <strong>Иван, Бутово</strong>
-                        <div class="stars">★★★★★</div>
-                        <p>Отличный сервис! Водка холодная, рыба свежая. Буду заказывать ещё.</p>
-                    </div>
-                    <div class="review-item">
-                        <strong>Мария, Царицыно</strong>
-                        <div class="stars">★★★★☆</div>
-                        <p>Хороший ассортимент, но доставка немного задержалась. В остальном всё супер.</p>
-                    </div>
-                    <div class="review-item">
-                        <strong>Павел, Нагатинская</strong>
-                        <div class="stars">★★★★★</div>
-                        <p>Брал пиво и сухарики к футболу. Привезли быстро, всё целое. Рекомендую!</p>
-                    </div>
-                    <div class="review-item">
-                        <strong>Екатерина, Ясенево</strong>
-                        <div class="stars">★★★★★</div>
-                        <p>Заказывали коньяк в подарок. Упаковали красиво, доставили вовремя. Спасибо!</p>
-                    </div>
-                    <div class="review-item">
-                        <strong>Дмитрий, Тёплый Стан</strong>
-                        <div class="stars">★★★★★</div>
-                        <p>Постоянный клиент. Цены радуют, всегда есть акции. Доставка ночью - вообще спасение.</p>
-                    </div>
+                <div class="reviews" id="reviews-container">
+                    <!-- Отзывы будут загружены из localStorage или отображены стандартные -->
                 </div>
 
                 <!-- Форма для отзыва -->
@@ -335,8 +293,92 @@
         </div>
     </footer>
 
+    <script>
+        // Обработка формы отзывов (сохранение в localStorage и отображение)
+        (function() {
+            // Стандартные отзывы (заполняются, если localStorage пуст)
+            const defaultReviews = [
+                { name: "Анна, Чертаново", rating: 5, text: "Заказывали виски и сыры на день рождения. Привезли быстро, всё свежее, виски просто божественное. Спасибо!" },
+                { name: "Дмитрий, Бутово", rating: 5, text: "Постоянно беру здесь водку и рыбу. Цены приятные, доставка всегда вовремя. Рекомендую." },
+                { name: "Елена, Царицыно", rating: 5, text: "Удобно, что можно заказать и пиво, и сухарики. Всё в одном заказе. Доставили за час." },
+                { name: "Иван, Бутово", rating: 5, text: "Отличный сервис! Водка холодная, рыба свежая. Буду заказывать ещё." },
+                { name: "Мария, Царицыно", rating: 4, text: "Хороший ассортимент, но доставка немного задержалась. В остальном всё супер." },
+                { name: "Павел, Нагатинская", rating: 5, text: "Брал пиво и сухарики к футболу. Привезли быстро, всё целое. Рекомендую!" },
+                { name: "Екатерина, Ясенево", rating: 5, text: "Заказывали коньяк в подарок. Упаковали красиво, доставили вовремя. Спасибо!" },
+                { name: "Дмитрий, Тёплый Стан", rating: 5, text: "Постоянный клиент. Цены радуют, всегда есть акции. Доставка ночью - вообще спасение." }
+            ];
+
+            // Получить отзывы из localStorage или установить по умолчанию
+            let reviews = JSON.parse(localStorage.getItem('alko_reviews'));
+            if (!reviews || !Array.isArray(reviews)) {
+                reviews = defaultReviews;
+                localStorage.setItem('alko_reviews', JSON.stringify(reviews));
+            }
+
+            // Функция отображения отзывов
+            function renderReviews() {
+                const container = document.getElementById('reviews-container');
+                if (!container) return;
+                container.innerHTML = '';
+                reviews.forEach(review => {
+                    const div = document.createElement('div');
+                    div.className = 'review-item';
+                    div.innerHTML = `
+                        <strong>${escapeHtml(review.name)}</strong>
+                        <div class="stars">${'★'.repeat(review.rating)}${'☆'.repeat(5-review.rating)}</div>
+                        <p>${escapeHtml(review.text)}</p>
+                    `;
+                    container.appendChild(div);
+                });
+            }
+
+            // Простая защита от XSS
+            function escapeHtml(str) {
+                return str.replace(/[&<>]/g, function(m) {
+                    if (m === '&') return '&amp;';
+                    if (m === '<') return '&lt;';
+                    if (m === '>') return '&gt;';
+                    return m;
+                }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function(c) {
+                    return c;
+                });
+            }
+
+            // Обработчик отправки формы
+            const form = document.getElementById('review-form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const nameInput = form.querySelector('input[name="reviewer_name"]');
+                    const ratingSelect = form.querySelector('select[name="rating"]');
+                    const textarea = form.querySelector('textarea[name="review_text"]');
+                    
+                    const name = nameInput.value.trim();
+                    const rating = parseInt(ratingSelect.value, 10);
+                    const text = textarea.value.trim();
+                    
+                    if (!name || !rating || !text) {
+                        alert('Пожалуйста, заполните все поля.');
+                        return;
+                    }
+                    
+                    const newReview = { name, rating, text };
+                    reviews.unshift(newReview); // новый отзыв сверху
+                    localStorage.setItem('alko_reviews', JSON.stringify(reviews));
+                    renderReviews();
+                    
+                    // Очистить форму
+                    nameInput.value = '';
+                    ratingSelect.value = '';
+                    textarea.value = '';
+                    
+                    alert('Спасибо за отзыв!');
+                });
+            }
+            
+            renderReviews();
+        })();
+    </script>
     <script src="script.js"></script>
 </body>
-
 </html>
-
